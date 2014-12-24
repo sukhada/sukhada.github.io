@@ -5,14 +5,13 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">    
-      <img src="{% asset_path image.png %}" alt="this is a test">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+      	<img src="{{ site.baseurl }}/assets/{{ post.title | slugify }}.png" class="img-post" alt="this is a test">
+      	<div class="cover"></div>      	
+      	<div class="title-container">
+      		<span class="title-hover">{{ post.title }}</span>
+      	</div>
+			</a>
     </article>
   {% endfor %}
 </div>
