@@ -51,6 +51,10 @@ img {
   max-height: 700px;
 }
 
+.img-post {
+  max-height: 200px;
+}
+
 .date {
   color: gray;
   float: left;
@@ -63,7 +67,7 @@ img {
 
 .cover {
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   opacity: 1;
   width: 200px;
   height: 200px;
@@ -78,13 +82,14 @@ span.title-hover {
   overflow: hidden;
   font-size: 22px;
   margin: 0 20px;
-  height: 110px;
   top: 0px;
   width: 160px;
-  vertical-align: middle;
   text-align: center;
-  line-height: 200px;
+  height: 200px;
   z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* jekyll inbuilt styles */
